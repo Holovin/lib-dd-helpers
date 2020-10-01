@@ -1,0 +1,34 @@
+{
+  "name": "lib_dd_helpers",
+  "version": "0.0.1",
+  "description": "N/A",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "start": "npm run build && npm run run",
+    "run": "node lib/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holovin/lib_dd_helpers.git"
+  },
+  "author": "Alexander Holovin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Holovin/lib_dd_helpers/issues"
+  },
+  "homepage": "https://github.com/Holovin/lib_dd_helpers#readme",
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1",
+    "nconf": "^0.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/nconf": "^0.10.0",
+    "@types/node": "^14.11.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "files": ["lib/**/*"]
+}
