@@ -1,2 +1,2 @@
-declare function f(a: string): void;
-export { f };
+import { Config } from './config';
+export { Config };

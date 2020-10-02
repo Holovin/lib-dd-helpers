@@ -1,6 +1,6 @@
 {
-  "name": "lib_dd_helpers",
-  "version": "0.0.1",
+  "name": "lib-dd-helpers",
+  "version": "0.0.2",
   "description": "N/A",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
