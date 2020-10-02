@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Holovin/lib_dd_helpers.git"
+    "url": "git+https://github.com/Holovin/lib-dd-helpers.git"
   },
   "author": "Alexander Holovin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Holovin/lib_dd_helpers/issues"
+    "url": "https://github.com/Holovin/lib-dd-helpers/issues"
   },
-  "homepage": "https://github.com/Holovin/lib_dd_helpers#readme",
+  "homepage": "https://github.com/Holovin/lib-dd-helpers#readme",
   "dependencies": {
     "fs-jetpack": "^3.1.0",
     "json-stringify-safe": "^5.0.1",
