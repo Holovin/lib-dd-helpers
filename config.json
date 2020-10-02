@@ -1,0 +1,11 @@
+{
+  "dd": {
+    "log": {
+      "default": "enable default values below",
+      "error": "log_error.log",
+      "info": "log_info.log",
+      "all": "log_all.log",
+      "dir": "logs/"
+    }
+  }
+}

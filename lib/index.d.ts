@@ -1,2 +1,3 @@
 import { Config } from './config';
-export { Config };
+import { Logger } from './logger';
+export { Config, Logger };

@@ -4,6 +4,6 @@ declare class Config extends Singleton {
     private config;
     protected constructor(fileName: string);
     static getInstance(): Config;
-    get(key: string): any;
+    get(key: string, defaultValue?: string): any;
 }
 export { Config };
