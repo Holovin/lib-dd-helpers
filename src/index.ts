@@ -1,7 +1,7 @@
 import { Config } from './config';
-import { Logger } from './logger';
+import { Logger, LoggerType } from './logger';
 
-export { Config, Logger };
+export { Config, Logger, LoggerType };
 
 /// tests
 // const config = Config.getInstance().get('1');

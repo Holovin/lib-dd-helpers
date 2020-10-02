@@ -1,4 +1,4 @@
-import { Logger as WinLogger } from 'winston';
+import { Logger as LoggerType } from 'winston';
 import { Singleton } from './helpers/singleton';
 declare class Logger extends Singleton {
     protected static instance: Logger;
@@ -6,6 +6,6 @@ declare class Logger extends Singleton {
     private config;
     protected constructor();
     static getInstance(): Logger;
-    getLogger(moduleName: string): WinLogger;
+    getLogger(moduleName: string): LoggerType;
 }
-export { Logger };
+export { Logger, LoggerType };

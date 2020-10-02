@@ -1,5 +1,5 @@
 import * as winston from 'winston';
-import { format, Logger as WinLogger, verbose } from 'winston';
+import { format, Logger as LoggerType, verbose } from 'winston';
 import { Singleton } from './helpers/singleton';
 import { Config } from './config';
 import jetpack from 'fs-jetpack';
@@ -16,7 +16,7 @@ import jetpack from 'fs-jetpack';
 
 class Logger extends Singleton {
     protected static instance: Logger;
-    private log: WinLogger;
+    private log: LoggerType;
     private config: Config;
 
     protected constructor() {
@@ -104,9 +104,9 @@ class Logger extends Singleton {
         return Logger.instance;
     }
 
-    public getLogger(moduleName: string): WinLogger {
+    public getLogger(moduleName: string): LoggerType {
         return this.log.child( { service: moduleName });
     }
 }
 
-export { Logger };
+export { Logger, LoggerType };
