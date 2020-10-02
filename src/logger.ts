@@ -53,7 +53,9 @@ class Logger extends Singleton {
             logAllFilename = 'log_all.log';
         }
 
-        jetpack.dir(logDirectory);
+        if (logDirectory) {
+            jetpack.dir(logDirectory);
+        }
 
         if (logErrorFilename) {
             transports.push(
