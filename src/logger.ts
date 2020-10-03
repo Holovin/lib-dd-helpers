@@ -37,16 +37,19 @@ class Logger extends Singleton {
         let logErrorFilename = '';
         let logInfoFilename = '';
         let logAllFilename = '';
-        let logConsoleLevel = 'verbose';
-        let logBaseLevel = 'silly';
+        let logConsoleLevel = '';
+        let logBaseLevel = '';
         let logDirectory = '';
 
         logErrorFilename = this.config.get('dd:log:error');
         logInfoFilename = this.config.get('dd:log:info');
         logAllFilename = this.config.get('dd:log:all');
         logDirectory = this.config.get('dd:log:dir');
+        logConsoleLevel = this.config.get('dd:log:console');
+        logBaseLevel = this.config.get('dd:log:base');
 
         if (this.config.get('dd:log:default')) {
+            logBaseLevel = 'silly';
             logConsoleLevel = 'verbose';
             logErrorFilename = 'log_error.log';
             logInfoFilename = 'log_info.log';
