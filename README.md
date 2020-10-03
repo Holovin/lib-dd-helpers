@@ -1,9 +1,9 @@
 # Lib: DDHelpers
 
-### Install
+## Installing
 `npm i https://github.com/Holovin/lib-dd-helpers`
 
-### Using
+## Using
 Default config file `config.json` (can be redefined via process env varibale `DD_CONFIG_FILE`)
 
 #### Logger module
