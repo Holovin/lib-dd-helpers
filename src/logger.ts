@@ -34,27 +34,27 @@ class Logger extends Singleton {
 
         const transports = [];
 
+        let logAllFilename = '';
+        let logBaseLevel = '';
+        let logConsoleLevel = '';
+        let logDirectory = '';
         let logErrorFilename = '';
         let logInfoFilename = '';
-        let logAllFilename = '';
-        let logConsoleLevel = '';
-        let logBaseLevel = '';
-        let logDirectory = '';
-
-        logErrorFilename = this.config.get('dd:log:error');
-        logInfoFilename = this.config.get('dd:log:info');
-        logAllFilename = this.config.get('dd:log:all');
-        logDirectory = this.config.get('dd:log:dir');
-        logConsoleLevel = this.config.get('dd:log:console');
-        logBaseLevel = this.config.get('dd:log:base');
 
         if (this.config.get('dd:log:default')) {
+            logAllFilename = 'log_all.log';
             logBaseLevel = 'silly';
             logConsoleLevel = 'verbose';
             logErrorFilename = 'log_error.log';
             logInfoFilename = 'log_info.log';
-            logAllFilename = 'log_all.log';
         }
+
+        logAllFilename = logAllFilename ?? this.config.get('dd:log:all');
+        logBaseLevel = logBaseLevel ?? this.config.get('dd:log:base');
+        logConsoleLevel = logConsoleLevel ?? this.config.get('dd:log:console');
+        logErrorFilename = logErrorFilename ?? this.config.get('dd:log:error');
+        logInfoFilename = logInfoFilename ?? this.config.get('dd:log:info');
+        logDirectory = this.config.get('dd:log:dir');
 
         if (logDirectory) {
             jetpack.dir(logDirectory);

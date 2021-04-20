@@ -23,7 +23,7 @@ Example:
 ##### Available params
 | Key           | if default = 'true' | Description |
 | ------------- | ------------------- | ----------- |
-| `default`     |                     | Sets all dd:log keys as defualt
+| `default`     |                     | Sets all dd:log keys as default
 | `error`       | 'log_error.log'     | Filename for log file with errors
 | `info`        | 'log_info.log'      | Filename for log file with info (and above) messages
 | `all`         | 'log_all.log'       | Filename for log file with all messages
