@@ -25,7 +25,7 @@ class Logger extends Singleton {
         this.config = Config.getInstance();
 
         const loggerFormatter = format.printf(info =>
-            `[${info.timestamp}] (${info.service ?? '?'}) ${info.level.toUpperCase()}: ${info.message}`
+            `[${info.timestamp}] (${info.service.padEnd(15, ' ') ?? '?'}) ${info.level.toUpperCase()}: ${info.message}`
         );
 
         const formatter = format.combine(
